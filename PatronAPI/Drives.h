@@ -6,10 +6,11 @@
 #include "Drive.h"
 #include "MappersProvider.h"
 #include "ItemResource.h"
+#include "ItemResourceChildren.h"
 
 typedef void (^DriveMetadata)(Drive*);
 typedef void (^RootFolder)(ItemResource*);
-typedef void (^FolderChildren)(NSArray*);
+typedef void (^FolderChildren)(ItemResourceChildren*);
 typedef void (^ViewDelta)(id*);
 typedef void (^SearchResults)(id*);
 

@@ -36,6 +36,8 @@
 		4563CAE41BC8674B005B3359 /* LastModifiedBy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAE21BC8674B005B3359 /* LastModifiedBy.m */; settings = {ASSET_TAGS = (); }; };
 		4563CAE71BC867E1005B3359 /* FileSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAE51BC867E1005B3359 /* FileSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4563CAE81BC867E1005B3359 /* FileSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAE61BC867E1005B3359 /* FileSystemInfo.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAEB1BC874EE005B3359 /* ItemResourceChildren.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAE91BC874EE005B3359 /* ItemResourceChildren.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAEC1BC874EE005B3359 /* ItemResourceChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */; settings = {ASSET_TAGS = (); }; };
 		45CF44EE1BBFB194000EF8E7 /* TokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EA1BBFB194000EF8E7 /* TokenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF44EB1BBFB194000EF8E7 /* TokenManager.m */; };
 		45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,6 +115,8 @@
 		4563CAE21BC8674B005B3359 /* LastModifiedBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastModifiedBy.m; sourceTree = "<group>"; };
 		4563CAE51BC867E1005B3359 /* FileSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemInfo.h; sourceTree = "<group>"; };
 		4563CAE61BC867E1005B3359 /* FileSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemInfo.m; sourceTree = "<group>"; };
+		4563CAE91BC874EE005B3359 /* ItemResourceChildren.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceChildren.h; sourceTree = "<group>"; };
+		4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceChildren.m; sourceTree = "<group>"; };
 		45CF44EA1BBFB194000EF8E7 /* TokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManager.h; sourceTree = "<group>"; };
 		45CF44EB1BBFB194000EF8E7 /* TokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManager.m; sourceTree = "<group>"; };
 		45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagerFactory.h; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 				4563CAE21BC8674B005B3359 /* LastModifiedBy.m */,
 				4563CAE51BC867E1005B3359 /* FileSystemInfo.h */,
 				4563CAE61BC867E1005B3359 /* FileSystemInfo.m */,
+				4563CAE91BC874EE005B3359 /* ItemResourceChildren.h */,
+				4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				4563CAD71BC85CF0005B3359 /* ItemResource.h in Headers */,
 				4563CADF1BC85E76005B3359 /* Folder.h in Headers */,
 				4563CACB1BC828D2005B3359 /* User.h in Headers */,
+				4563CAEB1BC874EE005B3359 /* ItemResourceChildren.h in Headers */,
 				4563CACF1BC82941005B3359 /* Drive.h in Headers */,
 				4563CAC31BC8134E005B3359 /* NSDataJsonToNSDictionary.h in Headers */,
 				455472711BC1D39D00B5AF48 /* HttpInvoker.h in Headers */,
@@ -431,6 +438,7 @@
 				4563CABC1BC75AB7005B3359 /* ApiUrlFactory.m in Sources */,
 				4538012E1BC21A7700174DBA /* PatronAPI.m in Sources */,
 				4563CAC11BC81336005B3359 /* NSDataJsonToNSDictionary.m in Sources */,
+				4563CAEC1BC874EE005B3359 /* ItemResourceChildren.m in Sources */,
 				4563CAD81BC85CF0005B3359 /* ItemResource.m in Sources */,
 				4563CAE81BC867E1005B3359 /* FileSystemInfo.m in Sources */,
 				453801291BC2116300174DBA /* URLRequestFactory.m in Sources */,

@@ -38,24 +38,27 @@
 
 -(ItemResource*)mapToItemResource:(NSData *)jsonData {
     NSDictionary* dict = [self->jsonToDictionary mapToNSDictionary:jsonData];
-    
-    ItemResource* itemResource = [[ItemResource alloc] init];
-    itemResource.odataContext = [dict objectForKey:@"@odata.context"];
-    itemResource.id = [dict objectForKey:@"id"];
-    itemResource.name = [dict objectForKey:@"name"];
-    itemResource.eTag = [dict objectForKey:@"eTag"];
-    itemResource.cTag = [dict objectForKey:@"cTag"];
-    itemResource.createdBy = [self mapToUser:[[dict objectForKey:@"createdBy"] objectForKey:@"user"]];
-    itemResource.createdDateTime = [dict objectForKey:@"createdDateTime"];
-    itemResource.lastModifiedBy = [self mapToLastModifiedBy:[dict objectForKey:@"lastModifiedBy"]];
-    itemResource.lastModifiedDateTime = [dict objectForKey:@"lastModifiedDateTime"];
-    itemResource.size = [dict objectForKey:@"size"];
-    itemResource.webUrl = [dict objectForKey:@"webUrl"];
-    itemResource.parentReference = [dict objectForKey:@"parentReference"];
-    itemResource.folder = [self mapToFolder:[dict objectForKey:@"folder"]];
-    itemResource.fileSystemInfo = [self mapToFileSystemInfo:[dict objectForKey:@"fileSystemInfo"]];
-    
+    ItemResource* itemResource = [self mapDictionaryToItemResource:dict];
     return itemResource;
+}
+
+-(ItemResourceChildren*)mapToItemResourceChildren:(NSData *)jsonData {
+    NSDictionary* dict = [self->jsonToDictionary mapToNSDictionary:jsonData];
+    
+    ItemResourceChildren* children = [[ItemResourceChildren alloc] init];
+    children.odataContext = [dict objectForKey:@"odata.context"];
+    
+    NSMutableArray* childResources = [[NSMutableArray alloc] init];
+    NSArray* jsonChildren = [dict objectForKey:@"value"];
+    
+    for (NSDictionary* childDict in jsonChildren) {
+        ItemResource* childResource = [self mapDictionaryToItemResource:childDict];
+        [childResources addObject:childResource];
+    }
+    
+    children.children = [childResources copy];
+    
+    return children;
 }
 
 -(User*)mapToUser:(NSDictionary *)userData {
@@ -134,6 +137,27 @@
     parentReference.path = [parentReferenceData objectForKey:@"path"];
     
     return parentReference;
+}
+
+-(ItemResource*)mapDictionaryToItemResource:(NSDictionary *)dict {
+    ItemResource* itemResource = [[ItemResource alloc] init];
+    
+    itemResource.odataContext = [dict objectForKey:@"@odata.context"];
+    itemResource.id = [dict objectForKey:@"id"];
+    itemResource.name = [dict objectForKey:@"name"];
+    itemResource.eTag = [dict objectForKey:@"eTag"];
+    itemResource.cTag = [dict objectForKey:@"cTag"];
+    itemResource.createdBy = [self mapToUser:[[dict objectForKey:@"createdBy"] objectForKey:@"user"]];
+    itemResource.createdDateTime = [dict objectForKey:@"createdDateTime"];
+    itemResource.lastModifiedBy = [self mapToLastModifiedBy:[dict objectForKey:@"lastModifiedBy"]];
+    itemResource.lastModifiedDateTime = [dict objectForKey:@"lastModifiedDateTime"];
+    itemResource.size = [dict objectForKey:@"size"];
+    itemResource.webUrl = [dict objectForKey:@"webUrl"];
+    itemResource.parentReference = [dict objectForKey:@"parentReference"];
+    itemResource.folder = [self mapToFolder:[dict objectForKey:@"folder"]];
+    itemResource.fileSystemInfo = [self mapToFileSystemInfo:[dict objectForKey:@"fileSystemInfo"]];
+    
+    return itemResource;
 }
 
 @end

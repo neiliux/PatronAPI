@@ -4,6 +4,7 @@
 #import "DriveQuota.h"
 #import "NSDataJsonToNSDictionary.h"
 #import "ItemResource.h"
+#import "ItemResourceChildren.h"
 
 @interface MappersProvider : NSObject
 
@@ -11,6 +12,7 @@
 
 -(Drive*)mapToDrive:(NSData *)jsonData;
 -(ItemResource*)mapToItemResource:(NSData *)jsonData;
+-(ItemResourceChildren*)mapToItemResourceChildren:(NSData *)jsonData;
 
 -(User*)mapToUser:(NSDictionary*)user;
 -(DriveQuota*)mapToDriveQuota:(NSDictionary*)driveQuota;
@@ -18,5 +20,6 @@
 -(Folder*)mapToFolder:(NSDictionary*)folderData;
 -(FileSystemInfo*)mapToFileSystemInfo:(NSDictionary*)fileSystemInfoData;
 -(ParentReference*)mapToParentReference:(NSDictionary*)parentReferenceData;
+-(ItemResource*)mapDictionaryToItemResource:(NSDictionary *)itemData;
 
 @end

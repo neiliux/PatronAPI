@@ -5,6 +5,7 @@
 #import "Drive.h"
 #import "MappersProvider.h"
 #import "ItemResource.h"
+#import "ItemResourceChildren.h"
 
 @implementation Drives
 
@@ -78,9 +79,27 @@
 }
 
 - (void)getDefaultDriveRootChildren:(FolderChildren)callback {
+    [self->httpInvoker invokeGet:[self->apiUrlFactory
+                                constructUrl:@"drive/root/children"]
+                    withHeaders:nil
+                    resolve:^(NSURLResponse *response, NSData *data, NSError *error) {
+                        // TODO: Add error handling.
+                        ItemResourceChildren* children = [self->mappersProvider mapToItemResourceChildren:data];
+                        callback(children);
+                    }
+    ];
 }
 
 - (void)getDriveRootChildren:(NSString*)driveId withCallback:(FolderChildren)callback {
+    [self->httpInvoker invokeGet:[self->apiUrlFactory
+                                  constructUrl:[NSString stringWithFormat:@"drives/%@/root/children", driveId]]
+                        withHeaders:nil
+                        resolve:^(NSURLResponse *response, NSData *data, NSError *error) {
+                            // TODO: Add error handling.
+                            ItemResourceChildren* children = [self->mappersProvider mapToItemResourceChildren:data];
+                            callback(children);
+                        }
+    ];
 }
 
 - (void)getDefaultDriveRootViewDelta:(ViewDelta)callback {
