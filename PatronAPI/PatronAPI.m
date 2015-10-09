@@ -18,8 +18,12 @@
         
         self->apiUrlFactory = [[ApiUrlFactory alloc] init];
         
+        NSDataJsonToNSDictionary *jsonToDictionary = [[NSDataJsonToNSDictionary alloc] init];
+        self->mappersProvider = [[MappersProvider alloc] initWith:jsonToDictionary];
+        
         self->drives = [[Drives alloc] initWith:self->httpInvoker
-                        withApiUrlFactory:apiUrlFactory];
+                        withApiUrlFactory:apiUrlFactory
+                        withMappersProvider:self->mappersProvider];
     }
     
     return self;

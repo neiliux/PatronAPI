@@ -13,6 +13,10 @@ FOUNDATION_EXPORT const unsigned char PatronAPIVersionString[];
 #import "URLRequestFactory.h"
 #import "Drives.h"
 #import "ApiUrlFactory.h"
+#import "DriveQuota.h"
+#import "NSDataJsonToNSDictionary.h"
+#import "User.h"
+#import "MappersProvider.h"
 
 @interface PatronAPI : NSObject {
 @private
@@ -20,6 +24,7 @@ FOUNDATION_EXPORT const unsigned char PatronAPIVersionString[];
     URLRequestFactory* urlRquestFactory;
     HttpInvoker* httpInvoker;
     ApiUrlFactory* apiUrlFactory;
+    MappersProvider* mappersProvider;
 }
 
 @property (readonly) Drives* drives;

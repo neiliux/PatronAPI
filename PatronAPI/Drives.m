@@ -3,17 +3,23 @@
 #import "HttpInvoker.h"
 #import "TokenManagerFactory.h"
 #import "ApiUrlFactory.h"
+#import "Drive.h"
+#import "User.h"
+#import "DriveQuota.h"
+#import "MappersProvider.h"
 
 @implementation Drives
 
 - (instancetype)initWith:(HttpInvoker *)HttpInvoker
-       withApiUrlFactory:(ApiUrlFactory *)factory {
+       withApiUrlFactory:(ApiUrlFactory *)factory
+     withMappersProvider:(MappersProvider *)provider {
     
     self = [super init];
     
     if (self) {
         self->httpInvoker = HttpInvoker;
         self->apiUrlFactory = factory;
+        self->mappersProvider = provider;
     }
     
     return self;
@@ -34,15 +40,13 @@
     // ];
 }
 
-- (void)getDefaultDrive:(void (^)(IDrive *))drive {
+- (void)getDefaultDrive:(void (^)(Drive *))callback {
     [self->httpInvoker invokeGet:[self->apiUrlFactory constructUrl:@"drive"]
                         withHeaders:nil
                          resolve: ^(NSURLResponse *response, NSData *data, NSError *error) {
-                             NSLog(@"ran");
-                             NSString *s = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
-                             NSLog(s);
-                             
-                             drive(nil);
+                             // TODO: Add error handling.
+                             Drive* drive = [self->mappersProvider mapToDrive:data];
+                             callback(drive);
                          }
      
      ];

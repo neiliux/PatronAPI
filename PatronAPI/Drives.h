@@ -4,21 +4,22 @@
 #include "HttpInvoker.h"
 #include "TokenManagerFactory.h"
 #include "ApiUrlFactory.h"
-
-@interface IDrive : NSObject {
-    NSString *id;
-}
-@end
+#include "Drive.h"
+#include "MappersProvider.h"
 
 @interface Drives: NSObject {
 @private
     HttpInvoker* httpInvoker;
     ApiUrlFactory* apiUrlFactory;
+    MappersProvider* mappersProvider;
 }
 
-- (instancetype)initWith:(HttpInvoker *)HttpInvoker withApiUrlFactory:(ApiUrlFactory *)factor;
+- (instancetype)initWith:(HttpInvoker *)HttpInvoker
+       withApiUrlFactory:(ApiUrlFactory *)factor
+        withMappersProvider:(MappersProvider *)provider;
+
 - (void)getDrives:(void(^)(NSMutableArray *))drives;
-- (void)getDefaultDrive:(void(^)(IDrive *))drive;
+- (void)getDefaultDrive:(void(^)(Drive *))drive;
 
 @end
 

@@ -17,7 +17,15 @@
 		4563CABC1BC75AB7005B3359 /* ApiUrlFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CABB1BC75AB7005B3359 /* ApiUrlFactory.m */; settings = {ASSET_TAGS = (); }; };
 		4563CABE1BC75AD1005B3359 /* ApiUrlFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CABD1BC75AD1005B3359 /* ApiUrlFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4563CAC11BC81336005B3359 /* NSDataJsonToNSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAC01BC81336005B3359 /* NSDataJsonToNSDictionary.m */; settings = {ASSET_TAGS = (); }; };
-		4563CAC31BC8134E005B3359 /* NSDataJsonToNSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAC21BC8134E005B3359 /* NSDataJsonToNSDictionary.h */; settings = {ASSET_TAGS = (); }; };
+		4563CAC31BC8134E005B3359 /* NSDataJsonToNSDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAC21BC8134E005B3359 /* NSDataJsonToNSDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAC61BC81CAE005B3359 /* DriveQuota.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAC41BC81CAE005B3359 /* DriveQuota.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAC71BC81CAE005B3359 /* DriveQuota.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAC51BC81CAE005B3359 /* DriveQuota.m */; settings = {ASSET_TAGS = (); }; };
+		4563CACB1BC828D2005B3359 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAC91BC828D2005B3359 /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CACC1BC828D2005B3359 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CACA1BC828D2005B3359 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		4563CACF1BC82941005B3359 /* Drive.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CACD1BC82941005B3359 /* Drive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAD01BC82941005B3359 /* Drive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CACE1BC82941005B3359 /* Drive.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAD31BC83307005B3359 /* MappersProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAD11BC83307005B3359 /* MappersProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAD41BC83307005B3359 /* MappersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAD21BC83307005B3359 /* MappersProvider.m */; settings = {ASSET_TAGS = (); }; };
 		45CF44EE1BBFB194000EF8E7 /* TokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EA1BBFB194000EF8E7 /* TokenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF44EB1BBFB194000EF8E7 /* TokenManager.m */; };
 		45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +85,14 @@
 		4563CABD1BC75AD1005B3359 /* ApiUrlFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUrlFactory.h; sourceTree = "<group>"; };
 		4563CAC01BC81336005B3359 /* NSDataJsonToNSDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataJsonToNSDictionary.m; sourceTree = "<group>"; };
 		4563CAC21BC8134E005B3359 /* NSDataJsonToNSDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataJsonToNSDictionary.h; sourceTree = "<group>"; };
+		4563CAC41BC81CAE005B3359 /* DriveQuota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveQuota.h; sourceTree = "<group>"; };
+		4563CAC51BC81CAE005B3359 /* DriveQuota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveQuota.m; sourceTree = "<group>"; };
+		4563CAC91BC828D2005B3359 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4563CACA1BC828D2005B3359 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4563CACD1BC82941005B3359 /* Drive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drive.h; sourceTree = "<group>"; };
+		4563CACE1BC82941005B3359 /* Drive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drive.m; sourceTree = "<group>"; };
+		4563CAD11BC83307005B3359 /* MappersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappersProvider.h; sourceTree = "<group>"; };
+		4563CAD21BC83307005B3359 /* MappersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappersProvider.m; sourceTree = "<group>"; };
 		45CF44EA1BBFB194000EF8E7 /* TokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManager.h; sourceTree = "<group>"; };
 		45CF44EB1BBFB194000EF8E7 /* TokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManager.m; sourceTree = "<group>"; };
 		45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagerFactory.h; sourceTree = "<group>"; };
@@ -115,6 +131,10 @@
 			children = (
 				453801231BC1E4B900174DBA /* Drives.h */,
 				453801251BC1E4D100174DBA /* Drives.m */,
+				4563CAC41BC81CAE005B3359 /* DriveQuota.h */,
+				4563CAC51BC81CAE005B3359 /* DriveQuota.m */,
+				4563CACD1BC82941005B3359 /* Drive.h */,
+				4563CACE1BC82941005B3359 /* Drive.m */,
 			);
 			name = Drives;
 			sourceTree = "<group>";
@@ -162,8 +182,19 @@
 			children = (
 				4563CAC01BC81336005B3359 /* NSDataJsonToNSDictionary.m */,
 				4563CAC21BC8134E005B3359 /* NSDataJsonToNSDictionary.h */,
+				4563CAD11BC83307005B3359 /* MappersProvider.h */,
+				4563CAD21BC83307005B3359 /* MappersProvider.m */,
 			);
 			name = Mappers;
+			sourceTree = "<group>";
+		};
+		4563CAC81BC827D8005B3359 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				4563CAC91BC828D2005B3359 /* User.h */,
+				4563CACA1BC828D2005B3359 /* User.m */,
+			);
+			name = Types;
 			sourceTree = "<group>";
 		};
 		45F832361BB8A956004B0314 = {
@@ -187,6 +218,7 @@
 		45F832421BB8A956004B0314 /* PatronAPI */ = {
 			isa = PBXGroup;
 			children = (
+				4563CAC81BC827D8005B3359 /* Types */,
 				4563CABF1BC7817D005B3359 /* Mappers */,
 				4563CABA1BC75A93005B3359 /* ApiUrlFactory */,
 				453801271BC2113C00174DBA /* URLRequestFactory */,
@@ -247,9 +279,13 @@
 				4538012C1BC2119400174DBA /* URLRequestFactory.h in Headers */,
 				45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */,
 				453801241BC1E4B900174DBA /* Drives.h in Headers */,
+				4563CAC61BC81CAE005B3359 /* DriveQuota.h in Headers */,
+				4563CAD31BC83307005B3359 /* MappersProvider.h in Headers */,
 				4563CABE1BC75AD1005B3359 /* ApiUrlFactory.h in Headers */,
-				455472711BC1D39D00B5AF48 /* HttpInvoker.h in Headers */,
+				4563CACB1BC828D2005B3359 /* User.h in Headers */,
+				4563CACF1BC82941005B3359 /* Drive.h in Headers */,
 				4563CAC31BC8134E005B3359 /* NSDataJsonToNSDictionary.h in Headers */,
+				455472711BC1D39D00B5AF48 /* HttpInvoker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,14 +387,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4563CACC1BC828D2005B3359 /* User.m in Sources */,
 				453801261BC1E4D100174DBA /* Drives.m in Sources */,
+				4563CAC71BC81CAE005B3359 /* DriveQuota.m in Sources */,
 				45CF44F11BBFB194000EF8E7 /* TokenManagerFactory.m in Sources */,
 				4563CABC1BC75AB7005B3359 /* ApiUrlFactory.m in Sources */,
 				4538012E1BC21A7700174DBA /* PatronAPI.m in Sources */,
 				4563CAC11BC81336005B3359 /* NSDataJsonToNSDictionary.m in Sources */,
 				453801291BC2116300174DBA /* URLRequestFactory.m in Sources */,
+				4563CAD01BC82941005B3359 /* Drive.m in Sources */,
 				4554726F1BC1D2AD00B5AF48 /* HttpInvoker.m in Sources */,
 				45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */,
+				4563CAD41BC83307005B3359 /* MappersProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
