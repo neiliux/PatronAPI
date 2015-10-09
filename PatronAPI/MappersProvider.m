@@ -3,6 +3,9 @@
 #import "User.h"
 #import "DriveQuota.h"
 #import "NSDataJsonToNSDictionary.h"
+#import "ItemResource.h"
+#import "FileSystemInfo.h"
+#import "Folder.h"
 
 @implementation MappersProvider {
 @private
@@ -33,6 +36,28 @@
     return drive;
 }
 
+-(ItemResource*)mapToItemResource:(NSData *)jsonData {
+    NSDictionary* dict = [self->jsonToDictionary mapToNSDictionary:jsonData];
+    
+    ItemResource* itemResource = [[ItemResource alloc] init];
+    itemResource.odataContext = [dict objectForKey:@"@odata.context"];
+    itemResource.id = [dict objectForKey:@"id"];
+    itemResource.name = [dict objectForKey:@"name"];
+    itemResource.eTag = [dict objectForKey:@"eTag"];
+    itemResource.cTag = [dict objectForKey:@"cTag"];
+    itemResource.createdBy = [self mapToUser:[[dict objectForKey:@"createdBy"] objectForKey:@"user"]];
+    itemResource.createdDateTime = [dict objectForKey:@"createdDateTime"];
+    itemResource.lastModifiedBy = [self mapToLastModifiedBy:[dict objectForKey:@"lastModifiedBy"]];
+    itemResource.lastModifiedDateTime = [dict objectForKey:@"lastModifiedDateTime"];
+    itemResource.size = [dict objectForKey:@"size"];
+    itemResource.webUrl = [dict objectForKey:@"webUrl"];
+    itemResource.parentReference = [dict objectForKey:@"parentReference"];
+    itemResource.folder = [self mapToFolder:[dict objectForKey:@"folder"]];
+    itemResource.fileSystemInfo = [self mapToFileSystemInfo:[dict objectForKey:@"fileSystemInfo"]];
+    
+    return itemResource;
+}
+
 -(User*)mapToUser:(NSDictionary *)userData {
     User* user = [[User alloc] init];
     
@@ -52,6 +77,63 @@
     driveQuota.used = [driveQuotaData objectForKey:@"used"];
 
     return driveQuota;
+}
+
+-(LastModifiedBy*)mapToLastModifiedBy:(NSDictionary*)lastModifiedData {
+    LastModifiedBy* lastModifiedBy = [[LastModifiedBy alloc] init];
+    
+    if (lastModifiedData == nil) {
+        return lastModifiedBy;
+    }
+    
+    NSDictionary* application = [lastModifiedData objectForKey:@"application"];
+    if (application != nil) {
+        lastModifiedBy.application = [self mapToUser:application];
+    }
+    
+    NSDictionary* user = [lastModifiedData objectForKey:@"user"];
+    if (user != nil) {
+        lastModifiedBy.user = [self mapToUser:user];
+    }
+    
+    return lastModifiedBy;
+}
+
+-(Folder*)mapToFolder:(NSDictionary*)folderData {
+    Folder* folder = [[Folder alloc] init];
+    
+    if (folderData != nil) {
+        folder.childCount = [folderData objectForKey:@"childCount"];
+    }
+    
+    return folder;
+}
+
+-(FileSystemInfo*)mapToFileSystemInfo:(NSDictionary*)fileSystemInfoData {
+    FileSystemInfo* fileSystemInfo = [[FileSystemInfo alloc] init];
+    
+    if (fileSystemInfoData == nil) {
+        return fileSystemInfo;
+    }
+    
+    fileSystemInfo.createdDateTime = [fileSystemInfoData objectForKey:@"createdDateTime"];
+    fileSystemInfo.lastModifiedDateTime = [fileSystemInfoData objectForKey:@"lastModifiedDateTime"];
+    
+    return fileSystemInfo;
+}
+
+-(ParentReference*)mapToParentReference:(NSDictionary*)parentReferenceData {
+    ParentReference* parentReference = [[ParentReference alloc] init];
+    
+    if (parentReferenceData == nil) {
+        return parentReference;
+    }
+    
+    parentReference.driveId = [parentReferenceData objectForKey:@"driveId"];
+    parentReference.id = [parentReferenceData objectForKey:@"id"];
+    parentReference.path = [parentReferenceData objectForKey:@"path"];
+    
+    return parentReference;
 }
 
 @end

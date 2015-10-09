@@ -26,6 +26,16 @@
 		4563CAD01BC82941005B3359 /* Drive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CACE1BC82941005B3359 /* Drive.m */; settings = {ASSET_TAGS = (); }; };
 		4563CAD31BC83307005B3359 /* MappersProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAD11BC83307005B3359 /* MappersProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4563CAD41BC83307005B3359 /* MappersProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAD21BC83307005B3359 /* MappersProvider.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAD71BC85CF0005B3359 /* ItemResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAD51BC85CF0005B3359 /* ItemResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAD81BC85CF0005B3359 /* ItemResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAD61BC85CF0005B3359 /* ItemResource.m */; settings = {ASSET_TAGS = (); }; };
+		4563CADB1BC85E17005B3359 /* ParentReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAD91BC85E17005B3359 /* ParentReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CADC1BC85E17005B3359 /* ParentReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CADA1BC85E17005B3359 /* ParentReference.m */; settings = {ASSET_TAGS = (); }; };
+		4563CADF1BC85E76005B3359 /* Folder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CADD1BC85E76005B3359 /* Folder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAE01BC85E76005B3359 /* Folder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CADE1BC85E76005B3359 /* Folder.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAE31BC8674B005B3359 /* LastModifiedBy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAE11BC8674B005B3359 /* LastModifiedBy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAE41BC8674B005B3359 /* LastModifiedBy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAE21BC8674B005B3359 /* LastModifiedBy.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAE71BC867E1005B3359 /* FileSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAE51BC867E1005B3359 /* FileSystemInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4563CAE81BC867E1005B3359 /* FileSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAE61BC867E1005B3359 /* FileSystemInfo.m */; settings = {ASSET_TAGS = (); }; };
 		45CF44EE1BBFB194000EF8E7 /* TokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EA1BBFB194000EF8E7 /* TokenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF44EB1BBFB194000EF8E7 /* TokenManager.m */; };
 		45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -93,6 +103,16 @@
 		4563CACE1BC82941005B3359 /* Drive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Drive.m; sourceTree = "<group>"; };
 		4563CAD11BC83307005B3359 /* MappersProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappersProvider.h; sourceTree = "<group>"; };
 		4563CAD21BC83307005B3359 /* MappersProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappersProvider.m; sourceTree = "<group>"; };
+		4563CAD51BC85CF0005B3359 /* ItemResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResource.h; sourceTree = "<group>"; };
+		4563CAD61BC85CF0005B3359 /* ItemResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResource.m; sourceTree = "<group>"; };
+		4563CAD91BC85E17005B3359 /* ParentReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentReference.h; sourceTree = "<group>"; };
+		4563CADA1BC85E17005B3359 /* ParentReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentReference.m; sourceTree = "<group>"; };
+		4563CADD1BC85E76005B3359 /* Folder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Folder.h; sourceTree = "<group>"; };
+		4563CADE1BC85E76005B3359 /* Folder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Folder.m; sourceTree = "<group>"; };
+		4563CAE11BC8674B005B3359 /* LastModifiedBy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastModifiedBy.h; sourceTree = "<group>"; };
+		4563CAE21BC8674B005B3359 /* LastModifiedBy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastModifiedBy.m; sourceTree = "<group>"; };
+		4563CAE51BC867E1005B3359 /* FileSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSystemInfo.h; sourceTree = "<group>"; };
+		4563CAE61BC867E1005B3359 /* FileSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSystemInfo.m; sourceTree = "<group>"; };
 		45CF44EA1BBFB194000EF8E7 /* TokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManager.h; sourceTree = "<group>"; };
 		45CF44EB1BBFB194000EF8E7 /* TokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManager.m; sourceTree = "<group>"; };
 		45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagerFactory.h; sourceTree = "<group>"; };
@@ -193,6 +213,16 @@
 			children = (
 				4563CAC91BC828D2005B3359 /* User.h */,
 				4563CACA1BC828D2005B3359 /* User.m */,
+				4563CAD51BC85CF0005B3359 /* ItemResource.h */,
+				4563CAD61BC85CF0005B3359 /* ItemResource.m */,
+				4563CAD91BC85E17005B3359 /* ParentReference.h */,
+				4563CADA1BC85E17005B3359 /* ParentReference.m */,
+				4563CADD1BC85E76005B3359 /* Folder.h */,
+				4563CADE1BC85E76005B3359 /* Folder.m */,
+				4563CAE11BC8674B005B3359 /* LastModifiedBy.h */,
+				4563CAE21BC8674B005B3359 /* LastModifiedBy.m */,
+				4563CAE51BC867E1005B3359 /* FileSystemInfo.h */,
+				4563CAE61BC867E1005B3359 /* FileSystemInfo.m */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -280,8 +310,13 @@
 				45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */,
 				453801241BC1E4B900174DBA /* Drives.h in Headers */,
 				4563CAC61BC81CAE005B3359 /* DriveQuota.h in Headers */,
+				4563CAE71BC867E1005B3359 /* FileSystemInfo.h in Headers */,
+				4563CAE31BC8674B005B3359 /* LastModifiedBy.h in Headers */,
 				4563CAD31BC83307005B3359 /* MappersProvider.h in Headers */,
 				4563CABE1BC75AD1005B3359 /* ApiUrlFactory.h in Headers */,
+				4563CADB1BC85E17005B3359 /* ParentReference.h in Headers */,
+				4563CAD71BC85CF0005B3359 /* ItemResource.h in Headers */,
+				4563CADF1BC85E76005B3359 /* Folder.h in Headers */,
 				4563CACB1BC828D2005B3359 /* User.h in Headers */,
 				4563CACF1BC82941005B3359 /* Drive.h in Headers */,
 				4563CAC31BC8134E005B3359 /* NSDataJsonToNSDictionary.h in Headers */,
@@ -336,7 +371,7 @@
 		45F832371BB8A956004B0314 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Neil Breeden III";
 				TargetAttributes = {
 					45F8323F1BB8A956004B0314 = {
@@ -390,11 +425,16 @@
 				4563CACC1BC828D2005B3359 /* User.m in Sources */,
 				453801261BC1E4D100174DBA /* Drives.m in Sources */,
 				4563CAC71BC81CAE005B3359 /* DriveQuota.m in Sources */,
+				4563CADC1BC85E17005B3359 /* ParentReference.m in Sources */,
+				4563CAE01BC85E76005B3359 /* Folder.m in Sources */,
 				45CF44F11BBFB194000EF8E7 /* TokenManagerFactory.m in Sources */,
 				4563CABC1BC75AB7005B3359 /* ApiUrlFactory.m in Sources */,
 				4538012E1BC21A7700174DBA /* PatronAPI.m in Sources */,
 				4563CAC11BC81336005B3359 /* NSDataJsonToNSDictionary.m in Sources */,
+				4563CAD81BC85CF0005B3359 /* ItemResource.m in Sources */,
+				4563CAE81BC867E1005B3359 /* FileSystemInfo.m in Sources */,
 				453801291BC2116300174DBA /* URLRequestFactory.m in Sources */,
+				4563CAE41BC8674B005B3359 /* LastModifiedBy.m in Sources */,
 				4563CAD01BC82941005B3359 /* Drive.m in Sources */,
 				4554726F1BC1D2AD00B5AF48 /* HttpInvoker.m in Sources */,
 				45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */,
@@ -444,6 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -518,6 +559,7 @@
 				INFOPLIST_FILE = PatronAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htmlbuffet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -535,6 +577,7 @@
 				INFOPLIST_FILE = PatronAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htmlbuffet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -554,6 +597,7 @@
 				);
 				INFOPLIST_FILE = PatronAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htmlbuffet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -568,6 +612,7 @@
 				);
 				INFOPLIST_FILE = PatronAPITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.htmlbuffet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

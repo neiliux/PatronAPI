@@ -2,10 +2,16 @@
 #define Drives_h
 
 #include "HttpInvoker.h"
-#include "TokenManagerFactory.h"
 #include "ApiUrlFactory.h"
 #include "Drive.h"
 #include "MappersProvider.h"
+#include "ItemResource.h"
+
+typedef void (^DriveMetadata)(Drive*);
+typedef void (^RootFolder)(ItemResource*);
+typedef void (^FolderChildren)(NSArray*);
+typedef void (^ViewDelta)(id*);
+typedef void (^SearchResults)(id*);
 
 @interface Drives: NSObject {
 @private
@@ -18,8 +24,17 @@
        withApiUrlFactory:(ApiUrlFactory *)factor
         withMappersProvider:(MappersProvider *)provider;
 
-- (void)getDrives:(void(^)(NSMutableArray *))drives;
-- (void)getDefaultDrive:(void(^)(Drive *))drive;
+- (void)getDrives:(void(^)(NSMutableArray *))callback;
+- (void)getDefaultDrive:(DriveMetadata)callback;
+- (void)getDrive:(NSString*)driveId withCallback:(DriveMetadata)callback;
+- (void)getDefaultDriveRootFolder:(RootFolder)callback;
+- (void)getDriveRootFolder:(NSString*)driveId withCallback:(RootFolder)callback;
+- (void)getDefaultDriveRootChildren:(FolderChildren)callback;
+- (void)getDriveRootChildren:(NSString*)driveId withCallback:(FolderChildren)callback;
+- (void)getDefaultDriveRootViewDelta:(ViewDelta)callback;
+- (void)getDriveRootViewDelta:(NSString*)driveId withCallback:(ViewDelta)callback;
+- (void)searchDefaultDrive:(id*)searchToken withCallback:(SearchResults)callback;
+- (void)searchDrive:(NSString*)driveId withSearchToken:(id*)serchToken withCallback:(SearchResults)callback;
 
 @end
 
