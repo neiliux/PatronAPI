@@ -84,15 +84,19 @@
 }
 
 - (void)getDefaultDriveRootViewDelta:(ViewDelta)callback {
+    [NSException raise:@"not implemented" format:@""];
 }
 
 - (void)getDriveRootViewDelta:(NSString*)driveId withCallback:(ViewDelta)callback {
+    [NSException raise:@"not implemented" format:@""];
 }
 
 - (void)searchDefaultDrive:(id*)searchToken withCallback:(SearchResults)callback {
+    [NSException raise:@"not implemented" format:@""];
 }
 
 - (void)searchDrive:(NSString*)driveId withSearchToken:(id*)serchToken withCallback:(SearchResults)callback {
+    [NSException raise:@"not implemented" format:@""];
 }
 
 @end

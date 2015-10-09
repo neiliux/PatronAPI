@@ -14,5 +14,9 @@
 
 -(User*)mapToUser:(NSDictionary*)user;
 -(DriveQuota*)mapToDriveQuota:(NSDictionary*)driveQuota;
+-(LastModifiedBy*)mapToLastModifiedBy:(NSDictionary*)lastModifiedData;
+-(Folder*)mapToFolder:(NSDictionary*)folderData;
+-(FileSystemInfo*)mapToFileSystemInfo:(NSDictionary*)fileSystemInfoData;
+-(ParentReference*)mapToParentReference:(NSDictionary*)parentReferenceData;
 
 @end
