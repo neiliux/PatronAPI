@@ -40,6 +40,7 @@
 		4563CAEC1BC874EE005B3359 /* ItemResourceChildren.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */; settings = {ASSET_TAGS = (); }; };
 		4563CAEF1BC89A3E005B3359 /* HttpResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAED1BC89A3E005B3359 /* HttpResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4563CAF01BC89A3E005B3359 /* HttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAEE1BC89A3E005B3359 /* HttpResult.m */; settings = {ASSET_TAGS = (); }; };
+		4563CAF31BC969FD005B3359 /* ApiUrlFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAF21BC969FD005B3359 /* ApiUrlFactoryTests.m */; settings = {ASSET_TAGS = (); }; };
 		45CF44EE1BBFB194000EF8E7 /* TokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EA1BBFB194000EF8E7 /* TokenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF44EB1BBFB194000EF8E7 /* TokenManager.m */; };
 		45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -121,6 +122,7 @@
 		4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceChildren.m; sourceTree = "<group>"; };
 		4563CAED1BC89A3E005B3359 /* HttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResult.h; sourceTree = "<group>"; };
 		4563CAEE1BC89A3E005B3359 /* HttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResult.m; sourceTree = "<group>"; };
+		4563CAF21BC969FD005B3359 /* ApiUrlFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUrlFactoryTests.m; sourceTree = "<group>"; };
 		45CF44EA1BBFB194000EF8E7 /* TokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManager.h; sourceTree = "<group>"; };
 		45CF44EB1BBFB194000EF8E7 /* TokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManager.m; sourceTree = "<group>"; };
 		45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagerFactory.h; sourceTree = "<group>"; };
@@ -239,6 +241,14 @@
 			name = Types;
 			sourceTree = "<group>";
 		};
+		4563CAF11BC969E0005B3359 /* ApiUrlFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4563CAF21BC969FD005B3359 /* ApiUrlFactoryTests.m */,
+			);
+			name = ApiUrlFactory;
+			sourceTree = "<group>";
+		};
 		45F832361BB8A956004B0314 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +295,7 @@
 		45F8324F1BB8A956004B0314 /* PatronAPITests */ = {
 			isa = PBXGroup;
 			children = (
+				4563CAF11BC969E0005B3359 /* ApiUrlFactory */,
 				45F832991BBDDAEE004B0314 /* OAuth */,
 				45F832521BB8A956004B0314 /* PatronAPITests.m */,
 				45F832501BB8A956004B0314 /* Supporting Files */,
@@ -465,6 +476,7 @@
 				45F832A31BBDE5AF004B0314 /* TokenManagerTests.m in Sources */,
 				45F832A11BBDDD93004B0314 /* TokenManagerFactoryTests.m in Sources */,
 				45F832531BB8A956004B0314 /* PatronAPITests.m in Sources */,
+				4563CAF31BC969FD005B3359 /* ApiUrlFactoryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
