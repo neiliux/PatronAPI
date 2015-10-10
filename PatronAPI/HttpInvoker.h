@@ -2,8 +2,9 @@
 #define HttpInvoker_h
 
 #import "URLRequestFactory.h"
+#import "HttpResult.h"
 
-typedef void (^HttpResult)(NSURLResponse *response, NSData *data, NSError *error);
+typedef void (^HttpResponse)(HttpResult*);
 
 @interface HttpInvoker : NSObject {
 @private
@@ -11,7 +12,7 @@ typedef void (^HttpResult)(NSURLResponse *response, NSData *data, NSError *error
 }
 
 - (instancetype) initWith:(URLRequestFactory *)UrlRequestFactory;
-- (void) invokeGet:(NSURL*)url withHeaders:(NSDictionary*)headers resolve:(HttpResult)callback;
+- (void) invokeGet:(NSURL*)url withHeaders:(NSDictionary*)headers resolve:(HttpResponse)callback;
 
 @end
 

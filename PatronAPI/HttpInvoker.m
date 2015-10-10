@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #include "HttpInvoker.h"
 #include "URLRequestFactory.h"
+#include "HttpResult.h"
 
 @implementation HttpInvoker
 
@@ -12,9 +13,9 @@
     return self;
 }
 
-- (void) invokeGet:(NSURL *)url
-                    withHeaders:(NSDictionary *)headers
-                    resolve:(HttpResult)callback {
+- (void)invokeGet:(NSURL *)url
+        withHeaders:(NSDictionary *)headers
+        resolve:(HttpResponse)callback {
     
     NSMutableURLRequest* request = [self->urlRequestFactory
                                     CreateRequest:url
@@ -25,7 +26,21 @@
                     completionHandler: ^(NSURLResponse * _Nullable response,
                                          NSData * _Nullable data,
                                          NSError * _Nullable connectionError) {
-                        callback(response, data, connectionError);
+                        
+                        HttpResult *result = [[HttpResult alloc] init];
+                        
+                        if (connectionError != nil) {
+                            result.hasError = true;
+                            result.error = connectionError;
+                        } else {
+                            result.hasError = false;
+                            result.error = nil;
+                        }
+                        
+                        result.data = data;
+                        result.response = response;
+                        
+                        callback(result);
                     }
      ];
 }
