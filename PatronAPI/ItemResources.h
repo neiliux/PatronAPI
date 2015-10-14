@@ -1,19 +1,45 @@
 #import <Foundation/Foundation.h>
 #import "ItemResource.h"
 #import "ItemResourceChildren.h"
+#import "ItemResourceCopyStatus.h"
+
+typedef void (^ItemResourceResult)(ItemResource*);
+typedef void (^ItemResultChildrenResult)(ItemResourceChildren*);
+typedef void (^DeleteItemResourceResult)(BOOL);
+typedef void (^ItemResourceCopyResult)(ItemResourceCopyStatus*);
 
 @interface ItemResources : NSObject
 
-- (ItemResource*)getItemResource:(NSString*)itemId;
-- (ItemResourceChildren*)getItemResourceChildren:(NSString*)itemId;
-- (ItemResource*)createItemResource:(NSString*)name withParentId:(NSString*)parentId withItemData:(NSDictionary*)itemData;
-- (ItemResource*)uploadFile:(NSString*)name withParentId:(NSString*)parentId withItemData:(NSDictionary*)itemData;
-- (BOOL)deleteItemResource:(NSString*)itemId;
-- (ItemResource*)moveItemResource:(NSString*)itemId withItemData:(NSDictionary*)itemData;
+- (void)getItemResource:(NSString*)itemId
+        withCallback:(ItemResourceResult)callback;
+
+- (void)getItemResourceChildren:(NSString*)itemId
+        withCallback:(ItemResultChildrenResult)callback;
+
+- (void)createItemResource:(NSString*)name
+        withParentId:(NSString*)parentId
+        withItemData:(NSDictionary*)itemData
+        withCallback:(ItemResourceResult)callback;
+
+- (void)uploadFile:(NSString*)name
+        withParentId:(NSString*)parentId
+        withItemData:(NSDictionary*)itemData
+        withCallback:(ItemResource*)callback;
+
+- (void)deleteItemResource:(NSString*)itemId
+        withCallback:(DeleteItemResourceResult)callback;
+
+- (void)moveItemResource:(NSString*)itemId
+        withItemData:(NSDictionary*)itemData
+        withCallback:(ItemResourceResult)callback;
 
 // TODO: Create appropriate response objects.
-- (NSObject*)copyItemResource:(NSString*)itemId withItemData:(NSDictionary*)itemData;
-- (NSObject*)getItemResourceCopyStatus:(NSObject*)copyItemResourceResult;
+- (void)copyItemResource:(NSString*)itemId
+        withItemData:(NSDictionary*)itemData
+        withCallback:(ItemResourceCopyResult)callback;
+
+- (void)getItemResourceCopyStatus:(NSObject*)copyItemResourceResult
+        withCallback:(ItemResourceCopyResult)callback;
 
 - (NSObject*)requestItemResourceDownload:(NSString*)itemId;
 - (NSObject*)downloadItemResourceContents:(NSObject*)downloadRequest;
