@@ -2,11 +2,21 @@
 #import "ItemResource.h"
 #import "ItemResourceChildren.h"
 #import "ItemResourceCopyStatus.h"
+#import "ItemResourceDownloadRequest.h"
+#import "ItemResourceContents.h"
+#import "ItemResourceSearch.h"
+#import "ItemResourceChanges.h"
+#import "ItemResourceThumbnails.h"
 
 typedef void (^ItemResourceResult)(ItemResource*);
 typedef void (^ItemResultChildrenResult)(ItemResourceChildren*);
 typedef void (^DeleteItemResourceResult)(BOOL);
 typedef void (^ItemResourceCopyResult)(ItemResourceCopyStatus*);
+typedef void (^ItemResourceDownloadRequestResult)(ItemResourceDownloadRequest*);
+typedef void (^ItemResourceContentsResult)(ItemResourceContents*);
+typedef void (^ItemResourceSearchResult)(ItemResourceSearch*);
+typedef void (^ItemResourceChangesResult)(ItemResourceChanges*);
+typedef void (^ItemResourceThumbnailsResult)(ItemResourceThumbnails*);
 
 @interface ItemResources : NSObject
 
@@ -33,7 +43,6 @@ typedef void (^ItemResourceCopyResult)(ItemResourceCopyStatus*);
         withItemData:(NSDictionary*)itemData
         withCallback:(ItemResourceResult)callback;
 
-// TODO: Create appropriate response objects.
 - (void)copyItemResource:(NSString*)itemId
         withItemData:(NSDictionary*)itemData
         withCallback:(ItemResourceCopyResult)callback;
@@ -41,12 +50,21 @@ typedef void (^ItemResourceCopyResult)(ItemResourceCopyStatus*);
 - (void)getItemResourceCopyStatus:(NSObject*)copyItemResourceResult
         withCallback:(ItemResourceCopyResult)callback;
 
-- (NSObject*)requestItemResourceDownload:(NSString*)itemId;
-- (NSObject*)downloadItemResourceContents:(NSObject*)downloadRequest;
+- (void)requestItemResourceDownload:(NSString*)itemId
+        withCallback:(ItemResourceDownloadRequestResult)callback;
 
-- (NSObject*)search:(NSString*)searchToken withFolder:(NSString*)folderId;
-- (NSObject*)getChanges:(NSString*)itemId;
-- (NSObject*)getItemResourceThumbnails:(NSString*)itemId;
+- (void)downloadItemResourceContents:(NSObject*)downloadRequest
+        withCallback:(ItemResourceContentsResult)callback;
+
+- (void)search:(NSString*)searchToken
+        withFolder:(NSString*)folderId
+        withCallback:(ItemResourceSearchResult)callback;
+
+- (void)getChanges:(NSString*)itemId
+       withCalback:(ItemResourceChangesResult)callback;
+
+- (void)getItemResourceThumbnails:(NSString*)itemId
+        withCallback:(ItemResourceThumbnailsResult)callback;
 
 // TODO: Create wrappers for creating folders, uploading files, etc.
 

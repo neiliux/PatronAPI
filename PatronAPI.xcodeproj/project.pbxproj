@@ -45,6 +45,16 @@
 		4563CAF81BCCAE86005B3359 /* ItemResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAF61BCCAE86005B3359 /* ItemResources.m */; settings = {ASSET_TAGS = (); }; };
 		4563CAFB1BCE12CD005B3359 /* ItemResourceCopyStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4563CAF91BCE12CD005B3359 /* ItemResourceCopyStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4563CAFC1BCE12CD005B3359 /* ItemResourceCopyStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4563CAFA1BCE12CD005B3359 /* ItemResourceCopyStatus.m */; settings = {ASSET_TAGS = (); }; };
+		458A7C341BD201E300AA30EA /* ItemResourceDownloadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A7C321BD201E300AA30EA /* ItemResourceDownloadRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458A7C351BD201E300AA30EA /* ItemResourceDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A7C331BD201E300AA30EA /* ItemResourceDownloadRequest.m */; settings = {ASSET_TAGS = (); }; };
+		458A7C381BD202D200AA30EA /* ItemResourceContents.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A7C361BD202D200AA30EA /* ItemResourceContents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458A7C391BD202D200AA30EA /* ItemResourceContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A7C371BD202D200AA30EA /* ItemResourceContents.m */; settings = {ASSET_TAGS = (); }; };
+		458A7C3C1BD2045400AA30EA /* ItemResourceSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A7C3A1BD2045400AA30EA /* ItemResourceSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458A7C3D1BD2045400AA30EA /* ItemResourceSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A7C3B1BD2045400AA30EA /* ItemResourceSearch.m */; settings = {ASSET_TAGS = (); }; };
+		458A7C401BD2052600AA30EA /* ItemResourceChanges.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A7C3E1BD2052600AA30EA /* ItemResourceChanges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458A7C411BD2052600AA30EA /* ItemResourceChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A7C3F1BD2052600AA30EA /* ItemResourceChanges.m */; settings = {ASSET_TAGS = (); }; };
+		458A7C441BD2057F00AA30EA /* ItemResourceThumbnails.h in Headers */ = {isa = PBXBuildFile; fileRef = 458A7C421BD2057F00AA30EA /* ItemResourceThumbnails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		458A7C451BD2057F00AA30EA /* ItemResourceThumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A7C431BD2057F00AA30EA /* ItemResourceThumbnails.m */; settings = {ASSET_TAGS = (); }; };
 		45CF44EE1BBFB194000EF8E7 /* TokenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EA1BBFB194000EF8E7 /* TokenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF44EB1BBFB194000EF8E7 /* TokenManager.m */; };
 		45CF44F01BBFB194000EF8E7 /* TokenManagerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -131,6 +141,16 @@
 		4563CAF61BCCAE86005B3359 /* ItemResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResources.m; sourceTree = "<group>"; };
 		4563CAF91BCE12CD005B3359 /* ItemResourceCopyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceCopyStatus.h; sourceTree = "<group>"; };
 		4563CAFA1BCE12CD005B3359 /* ItemResourceCopyStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceCopyStatus.m; sourceTree = "<group>"; };
+		458A7C321BD201E300AA30EA /* ItemResourceDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceDownloadRequest.h; sourceTree = "<group>"; };
+		458A7C331BD201E300AA30EA /* ItemResourceDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceDownloadRequest.m; sourceTree = "<group>"; };
+		458A7C361BD202D200AA30EA /* ItemResourceContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceContents.h; sourceTree = "<group>"; };
+		458A7C371BD202D200AA30EA /* ItemResourceContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceContents.m; sourceTree = "<group>"; };
+		458A7C3A1BD2045400AA30EA /* ItemResourceSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceSearch.h; sourceTree = "<group>"; };
+		458A7C3B1BD2045400AA30EA /* ItemResourceSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceSearch.m; sourceTree = "<group>"; };
+		458A7C3E1BD2052600AA30EA /* ItemResourceChanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceChanges.h; sourceTree = "<group>"; };
+		458A7C3F1BD2052600AA30EA /* ItemResourceChanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceChanges.m; sourceTree = "<group>"; };
+		458A7C421BD2057F00AA30EA /* ItemResourceThumbnails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemResourceThumbnails.h; sourceTree = "<group>"; };
+		458A7C431BD2057F00AA30EA /* ItemResourceThumbnails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemResourceThumbnails.m; sourceTree = "<group>"; };
 		45CF44EA1BBFB194000EF8E7 /* TokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManager.h; sourceTree = "<group>"; };
 		45CF44EB1BBFB194000EF8E7 /* TokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenManager.m; sourceTree = "<group>"; };
 		45CF44EC1BBFB194000EF8E7 /* TokenManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenManagerFactory.h; sourceTree = "<group>"; };
@@ -233,8 +253,6 @@
 			children = (
 				4563CAC91BC828D2005B3359 /* User.h */,
 				4563CACA1BC828D2005B3359 /* User.m */,
-				4563CAD51BC85CF0005B3359 /* ItemResource.h */,
-				4563CAD61BC85CF0005B3359 /* ItemResource.m */,
 				4563CAD91BC85E17005B3359 /* ParentReference.h */,
 				4563CADA1BC85E17005B3359 /* ParentReference.m */,
 				4563CADD1BC85E76005B3359 /* Folder.h */,
@@ -243,10 +261,6 @@
 				4563CAE21BC8674B005B3359 /* LastModifiedBy.m */,
 				4563CAE51BC867E1005B3359 /* FileSystemInfo.h */,
 				4563CAE61BC867E1005B3359 /* FileSystemInfo.m */,
-				4563CAE91BC874EE005B3359 /* ItemResourceChildren.h */,
-				4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */,
-				4563CAF91BCE12CD005B3359 /* ItemResourceCopyStatus.h */,
-				4563CAFA1BCE12CD005B3359 /* ItemResourceCopyStatus.m */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -262,8 +276,24 @@
 		4563CAF41BCCAE68005B3359 /* ItemResources */ = {
 			isa = PBXGroup;
 			children = (
+				4563CAD51BC85CF0005B3359 /* ItemResource.h */,
+				4563CAD61BC85CF0005B3359 /* ItemResource.m */,
 				4563CAF51BCCAE86005B3359 /* ItemResources.h */,
 				4563CAF61BCCAE86005B3359 /* ItemResources.m */,
+				458A7C3E1BD2052600AA30EA /* ItemResourceChanges.h */,
+				458A7C3F1BD2052600AA30EA /* ItemResourceChanges.m */,
+				458A7C421BD2057F00AA30EA /* ItemResourceThumbnails.h */,
+				458A7C431BD2057F00AA30EA /* ItemResourceThumbnails.m */,
+				4563CAE91BC874EE005B3359 /* ItemResourceChildren.h */,
+				4563CAEA1BC874EE005B3359 /* ItemResourceChildren.m */,
+				4563CAF91BCE12CD005B3359 /* ItemResourceCopyStatus.h */,
+				4563CAFA1BCE12CD005B3359 /* ItemResourceCopyStatus.m */,
+				458A7C321BD201E300AA30EA /* ItemResourceDownloadRequest.h */,
+				458A7C331BD201E300AA30EA /* ItemResourceDownloadRequest.m */,
+				458A7C361BD202D200AA30EA /* ItemResourceContents.h */,
+				458A7C371BD202D200AA30EA /* ItemResourceContents.m */,
+				458A7C3A1BD2045400AA30EA /* ItemResourceSearch.h */,
+				458A7C3B1BD2045400AA30EA /* ItemResourceSearch.m */,
 			);
 			name = ItemResources;
 			sourceTree = "<group>";
@@ -359,10 +389,15 @@
 				4563CAD31BC83307005B3359 /* MappersProvider.h in Headers */,
 				4563CABE1BC75AD1005B3359 /* ApiUrlFactory.h in Headers */,
 				4563CADB1BC85E17005B3359 /* ParentReference.h in Headers */,
+				458A7C381BD202D200AA30EA /* ItemResourceContents.h in Headers */,
+				458A7C441BD2057F00AA30EA /* ItemResourceThumbnails.h in Headers */,
 				4563CAD71BC85CF0005B3359 /* ItemResource.h in Headers */,
 				4563CADF1BC85E76005B3359 /* Folder.h in Headers */,
+				458A7C3C1BD2045400AA30EA /* ItemResourceSearch.h in Headers */,
 				4563CACB1BC828D2005B3359 /* User.h in Headers */,
 				4563CAFB1BCE12CD005B3359 /* ItemResourceCopyStatus.h in Headers */,
+				458A7C341BD201E300AA30EA /* ItemResourceDownloadRequest.h in Headers */,
+				458A7C401BD2052600AA30EA /* ItemResourceChanges.h in Headers */,
 				4563CAF71BCCAE86005B3359 /* ItemResources.h in Headers */,
 				4563CAEB1BC874EE005B3359 /* ItemResourceChildren.h in Headers */,
 				4563CACF1BC82941005B3359 /* Drive.h in Headers */,
@@ -470,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4563CACC1BC828D2005B3359 /* User.m in Sources */,
+				458A7C451BD2057F00AA30EA /* ItemResourceThumbnails.m in Sources */,
 				4563CAFC1BCE12CD005B3359 /* ItemResourceCopyStatus.m in Sources */,
 				453801261BC1E4D100174DBA /* Drives.m in Sources */,
 				4563CAC71BC81CAE005B3359 /* DriveQuota.m in Sources */,
@@ -482,14 +518,18 @@
 				4563CAEC1BC874EE005B3359 /* ItemResourceChildren.m in Sources */,
 				4563CAD81BC85CF0005B3359 /* ItemResource.m in Sources */,
 				4563CAE81BC867E1005B3359 /* FileSystemInfo.m in Sources */,
+				458A7C391BD202D200AA30EA /* ItemResourceContents.m in Sources */,
 				4563CAF81BCCAE86005B3359 /* ItemResources.m in Sources */,
 				453801291BC2116300174DBA /* URLRequestFactory.m in Sources */,
 				4563CAE41BC8674B005B3359 /* LastModifiedBy.m in Sources */,
+				458A7C351BD201E300AA30EA /* ItemResourceDownloadRequest.m in Sources */,
 				4563CAF01BC89A3E005B3359 /* HttpResult.m in Sources */,
 				4563CAD01BC82941005B3359 /* Drive.m in Sources */,
+				458A7C3D1BD2045400AA30EA /* ItemResourceSearch.m in Sources */,
 				4554726F1BC1D2AD00B5AF48 /* HttpInvoker.m in Sources */,
 				45CF44EF1BBFB194000EF8E7 /* TokenManager.m in Sources */,
 				4563CAD41BC83307005B3359 /* MappersProvider.m in Sources */,
+				458A7C411BD2052600AA30EA /* ItemResourceChanges.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
